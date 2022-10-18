@@ -16,7 +16,7 @@ class MessageHandler extends UpdateHandler
 
     public function handle()
     {
-        if(Str::contains(strtolower($this->update->message), ['github.com/spatie', 'spatie.be', 'freek.dev'])) {
+        if(Str::contains(strtolower($this->update->message->text), ['github.com/spatie', 'spatie.be', 'freek.dev'])) {
             $this->sendPhoto([
                 'chat_id' => $this->update->chat()->id,
                 'photo' => fopen(resource_path('img/spatie.jpg'), 'r'),
