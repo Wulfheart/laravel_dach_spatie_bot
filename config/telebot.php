@@ -35,8 +35,8 @@ return [
                 // 'certificate'       => env('TELEGRAM_BOT_CERT_PATH', storage_path('app/ssl/public.pem')),
                 // 'ip_address'        => '8.8.8.8',
                 // 'max_connections'   => 40,
-                 'allowed_updates'   => ["message", "edited_channel_post", "callback_query"],
-//                 'secret_token'      => env('TELEGRAM_KEY', null),
+                // 'allowed_updates'   => ["message", "edited_channel_post", "callback_query"],
+                // 'secret_token'      => env('TELEGRAM_KEY', null),
             ],
 
             'poll' => [
